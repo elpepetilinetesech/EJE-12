@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora cientifica PAJR 2025670112</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+<body>
+
+
+
+<div class="container text-center">
+
+    <h1>Calculadora cientifica</h1>
+    </br> <h5> Hecho por <strong> Pedro Antonio Jimenez Ramirez 2025670112 </strong> </h5>
+    <hr>
+
+    <input type="text" class="form-control w-100 fs-1" id="display" readonly placeholder="0" style="text-align: right; background-color: blanchedalmond; color: dimgrey">
+
+    <!-- Fila 1 -->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('7')">7</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('8')">8</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('9')">9</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info" onclick="addValue('+')">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 2 -->
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('4')">4</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('5')">5</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('6')">6</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info" onclick="addValue('-')" >-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fila 3 -->
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('1')">1</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('2')">2</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('3')">3</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info" onclick="addValue('*')" >*</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Fila 4 -->
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('0')">0</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="addValue('.')">.</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-success" onclick="calculate()" >=</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-info" onclick="addValue('/')" >/</button>
+                </div>
+            </div>        </div>
+    </div>
+
+
+
+
+    <!-- Fila 5 (Especiales) -->
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-danger" onclick="clearDisplay()" >C</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="calculateSqrt()">√</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="calculatePower()">x<sup>n</sup></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-dark" onclick="calculateLog()">log</button>
+                </div>
+            </div>        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+<script src="/js/cientfica.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
